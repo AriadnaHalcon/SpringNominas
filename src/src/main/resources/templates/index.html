@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; }
+        a { text-decoration: none; color: #0066cc; font-weight: bold; }
+        a:hover { color: #004080; }
+    </style>
+</head>
+<body>
+    <h1>Menú Principal</h1>
+    <ul>
+        <li><a th:href="@{/empleados}">Mostrar información de todos los empleados</a></li>
+        <li><a th:href="@{/empleado/salario}">Consultar salario de un empleado</a></li>
+        <li><a th:href="@{/empleado/modificar}">Modificar datos de un empleado</a></li>
+    </ul>
+</body>
+</html>

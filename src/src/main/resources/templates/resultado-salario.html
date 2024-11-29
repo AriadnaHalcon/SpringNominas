@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado Salario</title>
+</head>
+<body>
+    <h1>Resultado Salario</h1>
+    <p th:if="${empleado != null}">
+        El empleado <strong th:text="${empleado.nombre}"></strong> (DNI: <span th:text="${empleado.dni}"></span>)
+        tiene un salario de <strong th:text="${sueldo}"></strong>.
+    </p>
+    <p th:if="${empleado == null}">Empleado no encontrado.</p>
+    <a th:href="@{/}">Volver al menú principal</a>
+</body>
+</html>

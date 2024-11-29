@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado Modificar</title>
+</head>
+<body>
+    <h1>Resultado Modificar</h1>
+    <p th:if="${mensaje != null}">
+        <strong th:text="${mensaje}"></strong>
+    </p>
+    <a th:href="@{/}">Volver al menú principal</a>
+</body>
+</html>

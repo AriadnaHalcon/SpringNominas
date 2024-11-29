@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar Empleado</title>
+</head>
+<body>
+    <h1>Modificar Empleado</h1>
+    <form th:action="@{/empleado/modificar/resultado}" method="post">
+        <label for="dni">DNI del Empleado:</label>
+        <input type="text" id="dni" name="dni" required>
+        <label for="categoria">Nueva Categoría:</label>
+        <input type="number" id="categoria" name="categoria" min="1" max="10" required>
+        <label for="anyos">Nuevos Años Trabajados:</label>
+        <input type="number" id="anyos" name="anyos" min="0" required>
+        <button type="submit">Modificar</button>
+    </form>
+    <a th:href="@{/}">Volver al menú principal</a>
+</body>
+</html>

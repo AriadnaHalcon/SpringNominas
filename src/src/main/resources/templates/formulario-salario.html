@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Consultar Salario</title>
+</head>
+<body>
+    <h1>Consultar Salario</h1>
+    <form th:action="@{/empleado/salario/resultado}" method="get">
+        <label for="dni">DNI del Empleado:</label>
+        <input type="text" id="dni" name="dni" required>
+        <button type="submit">Consultar</button>
+    </form>
+    <a th:href="@{/}">Volver al menú principal</a>
+</body>
+</html>
